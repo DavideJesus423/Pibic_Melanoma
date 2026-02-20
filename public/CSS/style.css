@@ -1,5 +1,5 @@
 * {
-    font-family: 'Noto Sans Chorasmian', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 body {
     background: #f8fafc;
@@ -66,3 +66,38 @@ body {
     margin-bottom: 1.5rem;
     border: 1px solid rgba(255,255,255,0.1);
 }
+/*===========================================================================*/
+
+/*Cards*/
+
+.info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(66, 153, 225, 0.2);
+    border: 1px solid #f8fafc;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+    transform:translateY(-5px);
+    box-shadow: 0 12px 20px rgba(66, 153, 225, 0.2);
+}
+.info-card i {
+    font-size: 2rem;
+    color: #4299e1;
+    margin-bottom:1.5rem;
+}
+
+.info-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3e50;
+    margin-bottom: 1rem;
+}
+
+.info-card p {
+    color: #718096;
+}
+/*===========================================================================*/
