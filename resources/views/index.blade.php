@@ -99,6 +99,91 @@
             </div>
         </section>
 
+        <!--Informções do melanoma-->
+
+        <section id="melanoma" class="py-5 bg-light">
+            <div class="container py-5">
+                <div class="melanoma-section">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center mb-5">
+                            <h2 class="display-6 fw-bold mb-3">O que é Melanoma?</h2>
+                            <p class="text-secondary">O melanoma é o tipo mais grave de câncer de pele, originado nos melanócitos (células produtoras de melanina). A detecção precoce é fundamental para o sucesso do tratamento.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-3 col-6">
+                            <div class="stat-card">
+                                <div class="stat-number">sla%</div>
+                                <div class="stat-label">Cura se detectado cedo</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="stat-card">
+                                <div class="stat-number">slak+</div>
+                                <div class="stat-label">Mortes/ano no Brasil</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="stat-card">
+                                <div class="stat-number">8k+</div>
+                                <div class="stat-label">Caso novos por ano no Brasil</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="stat-card">
+                                <div class="stat-number">4mm</div>
+                                <div class="stat-label">Tamanho crítico</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="h4 fw-semibold mb-4">Regra ABCDE para identificação</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="abcde-item">
+                                <div class="abcde-letter">A</div>
+                                <div class="abcde-content">
+                                    <h4>Assimetria</h4>
+                                    <p>Metade da lesão não corresponde à outra metade</p>
+                                </div>
+                            </div>
+                            <div class="abcde-item">
+                                <div class="abcde-letter">B</div>
+                                <div class="abcde-content">
+                                    <h4>Bordas</h4>
+                                    <p>Bordas irregulares, onduladas ou mal definidas</p>
+                                </div>
+                            </div>
+                            <div class="abcde-item">
+                                <div class="abcde-letter">C</div>
+                                <div class="abcde-content">
+                                    <h4>Cor</h4>
+                                    <p>Variação de cores (preto, marrom, vermelho, branco ou azul)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="abcde-item">
+                                <div class="abcde-letter">D</div>
+                                <div class="abcde-content">
+                                    <h4>Diâmetro</h4>
+                                    <p>Maior que 6mm (tamanho de uma borracha de lápis)</p>
+                                </div>
+                            </div>
+                            <div class="abcde-item">
+                                <div class="abcde-letter">E</div>
+                                <div class="abcde-content">
+                                    <h4>Evolução</h4>
+                                    <p>Mudança em tamanho, forma ou cor ao longo do tempo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 </body>
 </html>

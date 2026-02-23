@@ -101,3 +101,75 @@ body {
     color: #718096;
 }
 /*===========================================================================*/
+
+/*Info-melanoma*/
+.melanoma-section {
+    background: white;
+    border-radius: 24px;
+    padding: 2.5rem;
+    margin: 3rem 0;
+    border: 1px solid white;
+}
+
+.abcde-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0;
+}
+
+.abcde-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #edf2f7;
+}
+
+.abcde-letter {
+    width: 40px;
+    height: 40px;
+    background:#4299e1;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.abcde-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3e50;
+    margin-bottom: 0.25rem;
+}
+
+.abcde-content p {
+    color: #718096;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.stat-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid #edf2f7;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4299e1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #718096;
+    font-size: 0.95rem;
+}
