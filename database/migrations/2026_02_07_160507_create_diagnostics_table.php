@@ -16,6 +16,7 @@ return new class extends Migration
             $table->text('result');
             $table->unsignedBigInteger('user_id');
             $table->decimal('hitability', 5,4);
+            $table->string('image_path');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
