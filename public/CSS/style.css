@@ -1,14 +1,12 @@
-* {
-    font-family: 'Inter', sans-serif;
-}
 body {
     background: #f8fafc;
+    font-family: 'Inter', sans-serif;
 }
 
 /*Navbar*/
 .navbar {
     background: white; 
-    box-shadow: 0 2px 10px #191970;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     padding: 1rem 0;
 }
 
@@ -37,6 +35,9 @@ body {
 /* Section */
 
 .hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
     background: linear-gradient(135deg, #2d3e50 0%, #1a2634 100%);
     color: white;
     padding: 80px 0;

@@ -37,7 +37,7 @@
                             <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Melanoma</a>
+                            <a class="nav-link" href="#melanoma">Melanoma</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Detector</a>
@@ -55,14 +55,14 @@
                 <div class="row align-items-center">
                     <div class="col-lg-8 mx-auto text-center">
                         <span class="badge-medical">
-                            <i class="bi bi-mortarboard me-2">Projeto PIBIC - Iniciação Científica</i>
+                            <i class="bi bi-mortarboard me-2"></i>Projeto PIBIC - Iniciação Científica
                         </span>
                         <h1>Identificação de Melanoma com Inteligência Artificial</h1>
                         <p class="lead">Sistema baseado em machine learning para auxiliar na detectação de lesões suspeitas de Melanoma</p>
                         <div class="d-flex gap-3 justify-content-center">
-                            <a class="btn btn-light btn-lg px-4" href="#"><i class="bi bi-camera me-2">Analisar</i>
+                            <a class="btn btn-light btn-lg px-4" href="#"><i class="bi bi-camera me-2"></i>Analisar
                             </a>
-                            <a href="#" class="btn btn-outline-light btn-lg px-4"> <i class="bi bi-info-circle me-2">Entender Melanoma</i>
+                            <a href="#" class="btn btn-outline-light btn-lg px-4"> <i class="bi bi-info-circle me-2"></i>Entender Melanoma
                             </a>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
         </section>
 
 
-        <section id="Sobre" class="py-5">
+        <section id="sobre" class="py-5">
             <div class="container py-5">
                 <div class="row g-4">
                     <div class="col-md-4">
