@@ -174,3 +174,101 @@ body {
     color: #718096;
     font-size: 0.95rem;
 }
+/* ===================== DETECTOR ===================== */
+.detector-card {
+    background: white;
+    border-radius: 24px;
+    padding: 2.5rem;
+    border: 1px solid #edf2f7;
+    box-shadow: 0 4px 6px rgba(66, 153, 225, 0.08);
+}
+ 
+/* Área de upload */
+.upload-area {
+    border: 2px dashed #bee3f8;
+    border-radius: 16px;
+    background: #f0f9ff;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s, background 0.3s;
+    cursor: pointer;
+}
+ 
+.upload-area:hover {
+    border-color: #4299e1;
+    background: #ebf8ff;
+}
+ 
+.upload-placeholder {
+    text-align: center;
+    padding: 2rem;
+}
+ 
+.upload-icon-wrap {
+    width: 64px;
+    height: 64px;
+    background: rgba(66, 153, 225, 0.12);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+ 
+.upload-icon-wrap i {
+    font-size: 2rem;
+    color: #4299e1;
+}
+ 
+.upload-title {
+    font-weight: 600;
+    color: #2d3e50;
+    margin-bottom: 0.25rem;
+}
+ 
+.upload-sub {
+    color: #a0aec0;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+}
+ 
+.btn-upload {
+    background: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.55rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+ 
+.btn-upload:hover {
+    background: #3182ce;
+    transform: translateY(-1px);
+}
+ 
+.upload-hint {
+    color: #a0aec0;
+    font-size: 0.8rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+ 
+ 
+/* Botão analisar */
+.btn-analyze {
+    background: linear-gradient(135deg, #2d3e50 0%, #1a2634 100%);
+    color: white;
+    border: none;
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 100%;
+    opacity: 0.45;
+    cursor: not-allowed;
+}

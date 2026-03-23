@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Chorasmian&family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
     <!--Link do CSS-->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!--Bootstrap JS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <title>Melanoma</title>
 </head>
 <body>
@@ -40,7 +43,7 @@
                             <a class="nav-link" href="#melanoma">Melanoma</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Detector</a>
+                            <a class="nav-link" href="#detector">Detector</a>
                         </li>
                     </ul>
                 </div>
@@ -180,6 +183,44 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="detector" class="py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <h2 class="display-6 fw-bold mb-3">Detector de Melanoma</h2>
+                        <p class="text-secondary">Envie uma foto da lesão para que nosso modelo de IA realize a análise</p>
+                    </div>
+                </div>
+
+
+                <div class="detector-card">
+                    <div class="row g-5 align-items-start">
+
+                        <div class="col-lg-6">
+                            <h5 class="fw-semibold mb-3" style="color:#2d3e50;">Enviar Imagem</h5>
+
+                            <div class="upload-placeholder">
+                                <div class="upload-icon-wrap">
+                                    <i class="bi bi-cloud-arrow-up"></i>
+                                </div>
+                                <p class="upload-title">Escolha sua imagem</p>
+                                <button class="btn-upload" type="button">
+                                    <i class="bi bi-folder2-open me-2"></i> Escolher arquivo
+                                </button>
+                                <p class="upload-hint">JPG, PNG ou WEBP</p>
+                            </div>
+                        </div>
+                        
+
+                        <button class="btn-analyze" type="button" disabled>
+                            <i class="bi bi-cpu me-2"></i>Analisar imagem
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </section>
