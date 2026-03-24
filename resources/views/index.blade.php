@@ -14,9 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Chorasmian&family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
     <!--Link do CSS-->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <!--Bootstrap JS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
     <title>Melanoma</title>
 </head>
 <body>
@@ -26,7 +24,7 @@
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <i class="bi bi-shield-plus">MelanomAI</i> 
+                    <i class="bi bi-shield-plus"></i>MelanomAI 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -63,9 +61,9 @@
                         <h1>Identificação de Melanoma com Inteligência Artificial</h1>
                         <p class="lead">Sistema baseado em machine learning para auxiliar na detectação de lesões suspeitas de Melanoma</p>
                         <div class="d-flex gap-3 justify-content-center">
-                            <a class="btn btn-light btn-lg px-4" href="#"><i class="bi bi-camera me-2"></i>Analisar
+                            <a class="btn btn-light btn-lg px-4" href="#detector"><i class="bi bi-camera me-2"></i>Analisar
                             </a>
-                            <a href="#" class="btn btn-outline-light btn-lg px-4"> <i class="bi bi-info-circle me-2"></i>Entender Melanoma
+                            <a href="#melanoma" class="btn btn-outline-light btn-lg px-4"> <i class="bi bi-info-circle me-2"></i>Entender Melanoma
                             </a>
                         </div>
                     </div>
@@ -187,6 +185,8 @@
             </div>
         </section>
 
+
+        <!--Detector-->
         <section id="detector" class="py-5">
             <div class="container py-5">
                 <div class="row">
@@ -198,33 +198,39 @@
 
 
                 <div class="detector-card">
-                    <div class="row g-5 align-items-start">
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
 
-                        <div class="col-lg-6">
-                            <h5 class="fw-semibold mb-3" style="color:#2d3e50;">Enviar Imagem</h5>
 
-                            <div class="upload-placeholder">
-                                <div class="upload-icon-wrap">
-                                    <i class="bi bi-cloud-arrow-up"></i>
+                            <form action="#" method="POST" enctype="multipart/form-data">
+                                <div class="upload-area mb-3">
+                                    <div class="upload-placeholder">
+                                        <div class="upload-icon-wrap">
+                                            <i class="bi bi-cloud-arrow-up"></i>
+                                        </div>
+                                        <p class="upload-title">Selecione uma imagem</p>                                      
+                                        <input type="file" name="imagem" id="fileInput" accept="image/*" class="form-control mt-2" hidden>
+                                        <label for="fileInput" class="btn-upload mt-2">
+                                            <i class="bi bi-folder2-open me-2"></i>Escolher arquivo
+                                        </label>
+                                        <p class="upload-hint mt-2">JPG, PNG ou WEBP</p>
+                                    </div>
                                 </div>
-                                <p class="upload-title">Escolha sua imagem</p>
-                                <button class="btn-upload" type="button">
-                                    <i class="bi bi-folder2-open me-2"></i> Escolher arquivo
+
+                                <button class="btn-analyze" type="button">
+                                    <i class="bi bi-cpu me-2"></i>Analisar imagem
                                 </button>
-                                <p class="upload-hint">JPG, PNG ou WEBP</p>
-                            </div>
+                            </form>
+
+
                         </div>
-                        
-
-                        <button class="btn-analyze" type="button" disabled>
-                            <i class="bi bi-cpu me-2"></i>Analisar imagem
-                        </button>
                     </div>
-
                 </div>
             </div>
         </section>
 
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
