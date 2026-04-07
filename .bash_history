@@ -1,0 +1,2 @@
+ping mysql
+exit
