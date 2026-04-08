@@ -202,7 +202,8 @@
                         <div class="col-lg-6 mx-auto">
 
 
-                            <form action="#" method="POST" enctype="multipart/form-data">
+                            <form action="" method="POST" enctype="multipart/form-data">
+                                @CSRF
                                 <div class="upload-area mb-3">
                                     <div class="upload-placeholder">
                                         <div class="upload-icon-wrap">
@@ -217,7 +218,7 @@
                                     </div>
                                 </div>
 
-                                <button class="btn-analyze" type="button">
+                                <button class="btn-analyze" type="submit">
                                     <i class="bi bi-cpu me-2"></i>Analisar imagem
                                 </button>
                             </form>
