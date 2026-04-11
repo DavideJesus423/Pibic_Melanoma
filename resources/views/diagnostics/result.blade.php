@@ -1,3 +1,6 @@
-<div>
-    <h1>RESULTADO</h1>
-</div>
+@extends('layout.main')
+@section('title', 'Resultado')
+
+@section('content')
+
+@endsection
