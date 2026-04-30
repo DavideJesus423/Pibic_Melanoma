@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!--Link do CSS-->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('js/main.js') }}">
 
     @yield('head')
 </head>
@@ -23,7 +22,7 @@
     <!-- Inicio Navbar -->
     <nav class="navbar">
         <div class="container">
-            <a href="dashboard.html" class="navbar-brand">
+            <a href="/" class="navbar-brand">
                 <div class="navbar-brand-icon">
                     <i class="bi bi-shield-plus"></i>
                 </div>
@@ -36,8 +35,8 @@
 
             <div class="navbar-collapse" style="display: flex; justify-content: center; align-items: center;">
                 <ul class="navbar-nav">
-                    <li><a href="#" class="nav-link active"><i class="bi bi-grid"></i> Melanoma</a></li>
-                    <li><a href="#" class="nav-link"><i class="bi bi-cloud-upload"></i> Análise</a></li>
+                     <li><a href="/" class="nav-link {{ request()->routeIs('index') ? 'active' : '' }}"><i class="bi bi-grid"></i>Melanoma</a></li>
+                    <li><a href="{{ route('upload') }}" class="nav-link {{ request()->routeIs('upload') ? 'active' : '' }}"><i class="bi bi-cloud-upload"></i> Análise</a></li>
                     <li><a href="#" class="nav-link"><i class="bi bi-book"></i> Sobre Nós</a></li>
 
                 </ul>
@@ -46,7 +45,7 @@
     </nav>
     <!--Fim Navbar-->
 <!--Fim-->
-
+    <script src="{{ asset('js/main.js') }}"></script>
     @yield ('content')
 </body>
 </html>
