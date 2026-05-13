@@ -1,6 +1,6 @@
 services:
   application:
-    build: 
+    build:
       context: ./docker/php
       dockerfile: Dockerfile
     image: application
@@ -12,6 +12,12 @@ services:
       - .:/var/www
     networks:
       - laravel_app
+    depends_on:
+      mysql:
+        condition: service_healthy
+      ia_service:
+        condition: service_started
+
   nginx:
     image: nginx:latest
     container_name: nginx
@@ -24,6 +30,7 @@ services:
       - laravel_app
     depends_on:
       - application
+
   mysql:
     image: mysql:8.1
     container_name: mysql
@@ -33,9 +40,15 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: 1131
     ports:
-      - "3306:3306"
+      - "3307:3306"
     networks:
       - laravel_app
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-prootpassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
 
   minio:
     image: minio/minio:latest
@@ -46,12 +59,30 @@ services:
     ports:
       - "9002:9000"
       - "9001:9001"
-    
     command: server /data --console-address ":9001"
     networks:
       - laravel_app
     volumes:
       - minio_data:/data
+
+  # ✅ Novo: microsserviço de IA
+  ia_service:
+    build:
+      context: ./ia-melanoma   # pasta onde ficará o FastAPI
+      dockerfile: Dockerfile
+    container_name: ia_service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./ia-melanoma:/app
+    networks:
+      - laravel_app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
 
 networks:
   laravel_app:
